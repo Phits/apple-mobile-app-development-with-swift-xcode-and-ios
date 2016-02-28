@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="CatDogYears" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catdog2" translatesAutoresizingMaskIntoConstraints="NO" id="VCz-Cb-sYf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cat &amp; Dog Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1g-sc-sGK">
+                                <rect key="frame" x="225" y="20" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cat's Age" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="urW-zU-usn">
+                                <rect key="frame" x="20" y="127" width="137" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfm-6d-QNL">
+                                <rect key="frame" x="9" y="165" width="161" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calculate Cat Years">
+                                    <color key="titleColor" red="0.84348412958115182" green="0.77105013931794175" blue="0.12233478214966488" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateCatYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j5J-9s-m9T"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvP-bh-7Kx">
+                                <rect key="frame" x="195" y="125" width="66" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="Fvi-jb-iej"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dog Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkI-cb-eiU">
+                                <rect key="frame" x="20" y="228" width="580" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XqF-6F-SFS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter your dog's age in years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-Ph-PJR">
+                                <rect key="frame" x="20" y="257" width="580" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="le4-Wq-EF2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Dog's Age" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Seu-9y-Rk8">
+                                <rect key="frame" x="20" y="288" width="137" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4W-we-J9X">
+                                <rect key="frame" x="20" y="324" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Calculate Dog Years">
+                                    <color key="titleColor" red="0.84348412958115182" green="0.77105013931794175" blue="0.12233478214966488" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateDogYearsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hF7-2g-tXW"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSW-38-3Qu">
+                                <rect key="frame" x="195" y="286" width="66" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cat Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pco-ux-3WP">
+                                <rect key="frame" x="20" y="67" width="580" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="c6t-E4-dIY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter your cat's age in years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ff9-nU-kMn">
+                                <rect key="frame" x="20" y="96" width="580" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9T1-Nt-tok"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Random Factoid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aN-1i-j5v">
+                                <rect key="frame" x="20" y="399" width="580" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ccW-51-icR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Factoid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TY-z5-RUy">
+                                <rect key="frame" x="20" y="428" width="560" height="85"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.16313622616624412" green="0.5316181282722513" blue="0.10765105517392978" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zU-hh-Ccd">
+                                <rect key="frame" x="20" y="534" width="182" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n21-P7-nnD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Get random factoid">
+                                    <color key="titleColor" red="0.84348412958115182" green="0.77105013931794175" blue="0.12233478214966488" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getRandomFactoid:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nGq-eB-xoH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ff9-nU-kMn" firstAttribute="leading" secondItem="pco-ux-3WP" secondAttribute="leading" id="1bY-CA-Lib"/>
+                            <constraint firstItem="pfm-6d-QNL" firstAttribute="leading" secondItem="DkI-cb-eiU" secondAttribute="leading" id="4C5-Gh-hHC"/>
+                            <constraint firstItem="uvP-bh-7Kx" firstAttribute="leading" secondItem="QSW-38-3Qu" secondAttribute="leading" id="7UK-F3-345"/>
+                            <constraint firstItem="urW-zU-usn" firstAttribute="top" secondItem="Ff9-nU-kMn" secondAttribute="bottom" constant="10" id="983-pf-Unj"/>
+                            <constraint firstItem="pco-ux-3WP" firstAttribute="trailing" secondItem="Ff9-nU-kMn" secondAttribute="trailing" id="Etn-gs-X1T"/>
+                            <constraint firstItem="pfm-6d-QNL" firstAttribute="top" secondItem="urW-zU-usn" secondAttribute="bottom" constant="6" id="Ezi-J7-7pq"/>
+                            <constraint firstItem="l1g-sc-sGK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F2S-B3-wTy"/>
+                            <constraint firstItem="O4W-we-J9X" firstAttribute="top" secondItem="Seu-9y-Rk8" secondAttribute="bottom" constant="6" id="HsC-4m-Y3x"/>
+                            <constraint firstItem="ecz-Ph-PJR" firstAttribute="trailing" secondItem="9aN-1i-j5v" secondAttribute="trailing" id="ITQ-uT-9oV"/>
+                            <constraint firstItem="VCz-Cb-sYf" firstAttribute="trailing" secondItem="ecz-Ph-PJR" secondAttribute="trailing" id="JCb-vE-c3N"/>
+                            <constraint firstItem="Seu-9y-Rk8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="L8K-cR-D4y"/>
+                            <constraint firstItem="DkI-cb-eiU" firstAttribute="top" secondItem="uvP-bh-7Kx" secondAttribute="bottom" constant="71" id="MCc-Rv-i3A"/>
+                            <constraint firstItem="Seu-9y-Rk8" firstAttribute="bottom" secondItem="QSW-38-3Qu" secondAttribute="bottom" id="Pgc-Zq-Ywz"/>
+                            <constraint firstItem="uvP-bh-7Kx" firstAttribute="leading" secondItem="urW-zU-usn" secondAttribute="trailing" constant="38" id="Pgy-ge-IV5"/>
+                            <constraint firstItem="ecz-Ph-PJR" firstAttribute="leading" secondItem="Seu-9y-Rk8" secondAttribute="leading" id="Plx-l3-zcX"/>
+                            <constraint firstItem="DkI-cb-eiU" firstAttribute="trailing" secondItem="ecz-Ph-PJR" secondAttribute="trailing" id="Q73-jD-Okf"/>
+                            <constraint firstItem="VCz-Cb-sYf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RYu-uu-5Io"/>
+                            <constraint firstItem="urW-zU-usn" firstAttribute="trailing" secondItem="pfm-6d-QNL" secondAttribute="trailing" id="USe-7Z-R8t"/>
+                            <constraint firstItem="urW-zU-usn" firstAttribute="leading" secondItem="pfm-6d-QNL" secondAttribute="leading" id="ZC3-ZK-ymf"/>
+                            <constraint firstItem="7zU-hh-Ccd" firstAttribute="leading" secondItem="3TY-z5-RUy" secondAttribute="leading" id="a79-Cg-oGz"/>
+                            <constraint firstItem="Ff9-nU-kMn" firstAttribute="trailing" secondItem="DkI-cb-eiU" secondAttribute="trailing" id="a7f-XO-JEv"/>
+                            <constraint firstAttribute="trailing" secondItem="ecz-Ph-PJR" secondAttribute="trailing" id="c8x-rx-cuL"/>
+                            <constraint firstItem="VCz-Cb-sYf" firstAttribute="centerX" secondItem="3TY-z5-RUy" secondAttribute="centerX" id="eOI-Ir-GE5"/>
+                            <constraint firstItem="urW-zU-usn" firstAttribute="bottom" secondItem="uvP-bh-7Kx" secondAttribute="bottom" id="eYy-qH-xL3"/>
+                            <constraint firstItem="O4W-we-J9X" firstAttribute="leading" secondItem="Seu-9y-Rk8" secondAttribute="leading" id="ed6-Xn-JRN"/>
+                            <constraint firstItem="3TY-z5-RUy" firstAttribute="top" secondItem="9aN-1i-j5v" secondAttribute="bottom" constant="8" symbolic="YES" id="fmF-0u-8Ww"/>
+                            <constraint firstItem="3TY-z5-RUy" firstAttribute="leading" secondItem="9aN-1i-j5v" secondAttribute="leading" id="gAw-7Y-d0M"/>
+                            <constraint firstItem="QSW-38-3Qu" firstAttribute="top" secondItem="ecz-Ph-PJR" secondAttribute="bottom" constant="8" symbolic="YES" id="hyi-fH-cwA"/>
+                            <constraint firstItem="9aN-1i-j5v" firstAttribute="top" secondItem="QSW-38-3Qu" secondAttribute="bottom" constant="81" id="iAU-JS-plV"/>
+                            <constraint firstItem="Seu-9y-Rk8" firstAttribute="top" secondItem="ecz-Ph-PJR" secondAttribute="bottom" constant="10" id="mOE-e8-4fm"/>
+                            <constraint firstItem="DkI-cb-eiU" firstAttribute="leading" secondItem="ecz-Ph-PJR" secondAttribute="leading" id="oMe-HV-eeh"/>
+                            <constraint firstItem="Ff9-nU-kMn" firstAttribute="top" secondItem="pco-ux-3WP" secondAttribute="bottom" constant="8" symbolic="YES" id="oT1-up-j0w"/>
+                            <constraint firstItem="urW-zU-usn" firstAttribute="leading" secondItem="Ff9-nU-kMn" secondAttribute="leading" id="pDf-ef-04D"/>
+                            <constraint firstItem="QSW-38-3Qu" firstAttribute="trailing" secondItem="uvP-bh-7Kx" secondAttribute="trailing" id="rlQ-TC-1Gv"/>
+                            <constraint firstItem="ecz-Ph-PJR" firstAttribute="top" secondItem="DkI-cb-eiU" secondAttribute="bottom" constant="8" symbolic="YES" id="s1U-6V-dBv"/>
+                            <constraint firstItem="VCz-Cb-sYf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="sav-A1-eKR"/>
+                            <constraint firstItem="VCz-Cb-sYf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sxc-0t-zBZ"/>
+                            <constraint firstItem="uvP-bh-7Kx" firstAttribute="top" secondItem="Ff9-nU-kMn" secondAttribute="bottom" constant="8" symbolic="YES" id="u9j-vc-AcH"/>
+                            <constraint firstItem="O4W-we-J9X" firstAttribute="centerX" secondItem="Seu-9y-Rk8" secondAttribute="centerX" id="vY8-H7-Top"/>
+                            <constraint firstItem="Seu-9y-Rk8" firstAttribute="trailing" secondItem="pfm-6d-QNL" secondAttribute="trailing" id="wYR-da-IJ8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7zU-hh-Ccd" secondAttribute="bottom" constant="49" id="wvY-jK-jsN"/>
+                            <constraint firstItem="9aN-1i-j5v" firstAttribute="leading" secondItem="O4W-we-J9X" secondAttribute="leading" id="yeh-3l-3SP"/>
+                            <constraint firstItem="7zU-hh-Ccd" firstAttribute="top" secondItem="3TY-z5-RUy" secondAttribute="bottom" constant="8" symbolic="YES" id="yzm-5k-pUC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="catAgeEntry" destination="urW-zU-usn" id="TW9-VJ-b5m"/>
+                        <outlet property="catAgeResult" destination="uvP-bh-7Kx" id="B9v-S6-s0Q"/>
+                        <outlet property="dogAgeEntry" destination="Seu-9y-Rk8" id="gRt-Hl-2pp"/>
+                        <outlet property="dogAgeResult" destination="QSW-38-3Qu" id="66P-Wp-xBm"/>
+                        <outlet property="randomFactoidText" destination="3TY-z5-RUy" id="Aba-Yk-RsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="449"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="catdog2" width="1600" height="1200"/>
+    </resources>
+</document>
